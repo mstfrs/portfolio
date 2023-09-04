@@ -136,7 +136,7 @@ export default function Home() {
             
             
             <div >
-              <h3 className="text-3xl py-1 my-12 pt-4 dark:text-white text-center flex flex-col items-center ">
+              <h3 className="text-3xl py-1 my-16 pt-4 dark:text-white text-center flex flex-col items-center ">
                 Skills
                 <motion.div
                   initial={{ scaleX: 0 }}
@@ -257,7 +257,7 @@ export default function Home() {
           <a  name="qualification"></a>
           <section className="px-10">
             <div>
-              <h3 className="text-3xl py-1 my-12 pt-4 dark:text-white text-center flex flex-col items-center">
+              <h3 className="text-3xl py-1 my-16 pt-4 dark:text-white text-center flex flex-col items-center">
                 Qualifications
                 <motion.div
                   initial={{ scaleX: 0 }}
@@ -355,7 +355,7 @@ export default function Home() {
 
           <section className="px-10">
             <div>
-              <h3 className="text-3xl py-1 my-12 pt-4 dark:text-white text-center flex flex-col items-center">Portfolio
+              <h3 className="text-3xl py-1 my-16 pt-4 dark:text-white text-center flex flex-col items-center">Portfolio
               <motion.div
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: [1,0,1] }}
