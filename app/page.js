@@ -33,7 +33,7 @@ export default function Home() {
         <section className=" min-h-screen">
           
 
-          <header className="flex flex-row justify-between  w-full px-10 py-6 items-center sticky top-0 bg-white dark:bg-gray-900 z-40">
+          <header className="flex flex-row justify-between  w-full px-6 py-6 items-center sticky top-0 bg-white dark:bg-gray-900 z-40">
             <div className="basis-1/4">
               <Image alt="logo" width={50} height={50} src={logo} />
             </div>
@@ -88,7 +88,7 @@ export default function Home() {
           <a href="" name="about"></a>
 
 {/* -----------------------About-------------------- */}
-          <div className="text-center  pt-20 ">
+          <div className="text-center  pt-24 ">
             <div className="text-5xl py-2 text-teal-600 font-medium font-burtons md:text-6xl">
             <NameTitle animatedText={"Mustafa ÖRS"} />
             </div>
@@ -136,7 +136,7 @@ export default function Home() {
             
             
             <div >
-              <h3 className="text-3xl py-1 my-16 pt-4 dark:text-white text-center flex flex-col items-center ">
+              <h3 className="text-3xl py-1 my-20 pt-4 dark:text-white text-center flex flex-col items-center ">
                 Skills
                 <motion.div
                   initial={{ scaleX: 0 }}
@@ -257,7 +257,7 @@ export default function Home() {
           <a  name="qualification"></a>
           <section className="px-10">
             <div>
-              <h3 className="text-3xl py-1 my-16 pt-4 dark:text-white text-center flex flex-col items-center">
+              <h3 className="text-3xl py-1 my-20 pt-4 dark:text-white text-center flex flex-col items-center">
                 Qualifications
                 <motion.div
                   initial={{ scaleX: 0 }}
@@ -355,7 +355,7 @@ export default function Home() {
 
           <section className="px-10">
             <div>
-              <h3 className="text-3xl py-1 my-16 pt-4 dark:text-white text-center flex flex-col items-center">Portfolio
+              <h3 className="text-3xl py-1 my-20 pt-4 dark:text-white text-center flex flex-col items-center">Portfolio
               <motion.div
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: [1,0,1] }}
