@@ -15,7 +15,7 @@ export const projects=[
 },
   {
   title: 'Contact App',
-  image: "/images/contactapp.JPG ",
+  image: "/images/contactapp.JPG",
   github: "https://github.com/mstfrs/Firebase-Contact.git",
   demo: "https://firebase-contact-mors.netlify.app/",
   techs:["HTML","Javascript", "Firebase"],
