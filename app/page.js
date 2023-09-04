@@ -19,18 +19,20 @@ import { motion } from "framer-motion";
 import PortfolioCard from "@/components/PortfolioCard";
 import Link from "next/link";
 import NameTitle from "@/components/NameTitle";
+import {projects} from "../public/data/projects"
 
 export default function Home() {
+  console.log(projects)
   const [darkMode, setDarkMode] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isVisitOpen, setIsVisitOpen] = useState(false)
+  const [isVisitOpen, setIsVisitOpen] = useState(true)
   return (
     <div className={darkMode ? "dark" : ""}>
-      <main className=" bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900  ">
+      <main className=" bg-white dark:bg-gray-900  ">
         <section className=" min-h-screen">
           
 
-          <header className="flex flex-row justify-between pt-6  items-center sticky top-0 bg-white dark:bg-gray-900 z-40">
+          <header className="flex flex-row justify-between pt-6 w-full px-10 items-center sticky top-0 bg-white dark:bg-gray-900 z-40">
             <div className="basis-1/4">
               <Image alt="logo" width={50} height={50} src={logo} />
             </div>
@@ -112,13 +114,13 @@ export default function Home() {
             
             
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 shadow-2xl shadow-blue-500 dark:shadow-blue-300">
             <Image
               src={profile}
               alt="profile"
               layout="fill"
               objectFit="cover"
-              className="rounded-full"
+              className="rounded-full shadow-xl"
             />
           </div>
 
@@ -278,7 +280,7 @@ export default function Home() {
                             </p>{" "}
                             <p className="text-sm flex items-center gap-2 mt-4  text-gray-400 dark:text-gray-300">
                               <LuCalendarDays className="text-sm" />
-                              2018-2021
+                              Sep 2018 - Feb 2021
                             </p>{" "}
                           </>
                         ),
@@ -295,7 +297,7 @@ export default function Home() {
                             </p>{" "}
                             <p className="text-sm flex justify-end items-center gap-2 mt-4  text-gray-400 dark:text-gray-300">
                               <LuCalendarDays className="text-sm" />
-                              2021-2022
+                              Jun 2021 - Jul 2022
                             </p>{" "}
                           </>
                         ),
@@ -312,7 +314,7 @@ export default function Home() {
                             </p>{" "}
                             <p className="text-sm flex items-center gap-2 mt-4  text-gray-400 dark:text-gray-300">
                               <LuCalendarDays className="text-sm" />
-                              2022-2023
+                              Dec 2022 - Jun 2023
                             </p>{" "}
                           </>
                         ),
@@ -329,7 +331,7 @@ export default function Home() {
                             </p>{" "}
                             <p className="text-sm flex justify-end items-center gap-2 mt-4  text-gray-400 dark:text-gray-300">
                               <LuCalendarDays className="text-sm" />
-                              2022-2023
+                              Aug 2023 - Present
                             </p>{" "}
                           </>
                         ),
@@ -340,68 +342,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* <div className="lg:flex gap-10">
-              <div className="text-center  shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-                <Image
-                  src={design}
-                  alt="design"
-                  width={100}
-                  height={100}
-                  className="inline-block items-center"
-                />
-                <h3 className="text-lg font-medium pt-8 pb-2">
-                  Bautiful Designs
-                </h3>
-                <p className="py-2 ">
-                  Creating elegant designs suited for your following core design
-                  theory.
-                </p>
-                <h4 className="py-4 text-teal-600">Design tools I use</h4>
-                <p className="text-gray-800 py-1">Photoshop</p>
-                <p className="text-gray-800 py-1">Illustrator</p>
-                <p className="text-gray-800 py-1">Figma</p>
-              </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-                <Image
-                  src={design}
-                  alt="design"
-                  width={100}
-                  height={100}
-                  className="inline-block items-center"
-                />
-                <h3 className="text-lg font-medium pt-8 pb-2">
-                  Bautiful Designs
-                </h3>
-                <p className="py-2 ">
-                  Creating elegant designs suited for your following core design
-                  theory.
-                </p>
-                <h4 className="py-4 text-teal-600">Design tools I use</h4>
-                <p className="text-gray-800 py-1">Photoshop</p>
-                <p className="text-gray-800 py-1">Illustrator</p>
-                <p className="text-gray-800 py-1">Figma</p>
-              </div>
-              <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
-                <Image
-                  src={coding}
-                  alt="coding"
-                  width={100}
-                  height={100}
-                  className="inline-block items-center"
-                />
-                <h3 className="text-lg font-medium pt-8 pb-2">
-                  Bautiful Designs
-                </h3>
-                <p className="py-2  ">
-                  Creating elegant designs suited for your following core design
-                  theory.
-                </p>
-                <h4 className="py-4 text-teal-600">Design tools I use</h4>
-                <p className="text-gray-800 py-1">Photoshop</p>
-                <p className="text-gray-800 py-1">Illustrator</p>
-                <p className="text-gray-800 py-1">Figma</p>
-              </div>
-            </div> */}
           </section>
 
            {/* -----------------------Portfolio-------------------- */}
@@ -420,169 +360,20 @@ export default function Home() {
               
             </div>
             <div className="flex flex-col justify-center items-center gap-10 py-10 lg:flex-row lg:flex-wrap ">
-              <div className="   ">
-                <div class="relative flex w-96 flex-col rounded-xl bg-white  bg-clip-border text-gray-700 shadow-md">
-                  <div class="relative  items-center flex justify-center mx-4 mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-                    <img
-                      src="/images/posapp.JPG"
-                      alt="img-blur-shadow"
-                      layout="fill"
-                      className=""
-                    />
-                    
-                  </div>
-                  <div class="p-6">
-                    <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                      <a href="https://mors-pos-app.onrender.com/" target="_blank">POS App</a>
-                      
-                    </h5>
-                    <div className="flex gap-4 mt-5 text-blue-600 font-medium">
-                      <p>HTML</p>
-                      <p>NextJS</p>
-                      <p>Tailwind CSS</p>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-              <div className="  ">
-                <div className="relative flex w-96 flex-col rounded-xl bg-white  bg-clip-border text-gray-700 shadow-md">
-                  <div className="relative  items-center flex justify-center mx-4 mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-                    <img
-                      src="/images/recipeapp.JPG"
-                      alt="img-blur-shadow"
-                      layout="fill"
-                      className=""
-                    />
-                    
-                  </div>
-                  <div className="p-6">
-                    <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                      <a href="https://mors-recipe.netlify.app/" target="_blank">Recipe App</a>
-                      
-                    </h5>
-                    <div className="flex gap-4 mt-5 text-blue-600 font-medium">
-                      <p>HTML</p>
-                      <p>React</p>
-                      <p>Styled Component</p>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-              <div className=" ">
-                <div className="relative flex w-96 flex-col rounded-xl bg-white  bg-clip-border text-gray-700 shadow-md">
-                  <div className="relative  items-center flex justify-center mx-4 mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-                    <img
-                      src="/images/contactapp.JPG "
-                      alt="img-blur-shadow"
-                      layout="fill"
-                      className=""
-                    />
-                    
-                  </div>
-                  <div className="p-6">
-                    <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                      <a href="https://firebase-contact-mors.netlify.app/" target="_blank">Contact App</a>
-                      
-                    </h5>
-                    <div className="flex gap-4 mt-5 text-blue-600 font-medium">
-                      <p>HTML</p>
-                      <p>JavaScript</p>
-                      <p>Firebase</p>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-              <div className=" ">
-                <div className="relative flex w-96 flex-col rounded-xl bg-white  bg-clip-border text-gray-700 shadow-md">
-                  <div className="relative  items-center flex justify-center mx-4 mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-                    <img
-                      src="/images/financeapp.JPG"
-                      alt="img-blur-shadow"
-                      layout="fill"
-                      className=""
-                    />
-                    
-                  </div>
-                  <div className="p-6">
-                    <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                      <a href="https://mors-ondokuzon.netlify.app/" target="_blank">Finance Tracker</a>
-                      
-                    </h5>
-                    <div className="flex gap-4 mt-5 text-blue-600 font-medium">
-                      <p>HTML</p>
-                      <p>React</p>
-                      <p>Tailwind CSS</p>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-              <div className="  ">
-                <div className="relative flex w-96 flex-col rounded-xl bg-white  bg-clip-border text-gray-700 shadow-md">
-                  <div className="relative  items-center flex justify-center mx-4 mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-                    <img
-                      src="/images/movieapp.JPG"
-                      alt="img-blur-shadow"
-                      layout="fill"
-                      className=""
-                    />
-                    
-                  </div>
-                  <div className="p-6">
-                    <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                      <a href="https://mors-moviapp.netlify.app/" target="_blank">Movie App</a>
-                      
-                    </h5>
-                    <div className="flex gap-4 mt-5 text-blue-600 font-medium">
-                      <p>HTML</p>
-                      <p>React</p>
-                      <p>CSS</p>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
-              <div className=" ">
-                <div className="relative flex w-96 flex-col rounded-xl bg-white  bg-clip-border text-gray-700 shadow-md">
-                  <div className="relative  items-center flex justify-center mx-4 mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-                    <img
-                      src="/images/parallax.JPG"
-                      alt="img-blur-shadow"
-                      layout="fill"
-                      className=""
-                    />
-                    
-                  </div>
-                  <div className="p-6">
-                    <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                      <a href="https://mors-parallax.netlify.app/" target="_blank">Parallax Website</a>
-                      
-                    </h5>
-                    <div className="flex gap-4 mt-5 text-blue-600 font-medium">
-                      <p>HTML</p>
-                      <p>React</p>
-                      <p>CSS</p>
-                    </div>
-                  </div>
-                 
-                </div>
-              </div>
+
+              {projects.map((project)=>(
+                
+                
+                <PortfolioCard key={project.id} title={project.title} image={project.image} github={project.github} demo={project.demo} techs={project.techs} />
+              
+              ))}
+
+
+            
              
 
               
-              {/* <div className="basis-1/3 flex-1">
-                <Image
-                  alt="web3"
-                  src={web3}
-                  className="rounded-lg object-cover"
-                  width={"100%"}
-                  height={"100%"}
-                  layout="responsive"
-                />
-              </div> */}
+             
             </div>
           </section>
         </section>
