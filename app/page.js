@@ -8,7 +8,7 @@ import {
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import { LuCalendarDays } from "react-icons/lu";
 import { FiClock, FiMenu } from "react-icons/fi";
-import { FaTimes } from "react-icons/fa";
+import { FaDownload, FaTimes } from "react-icons/fa";
 import Image from "next/image";
 import profile from "../public/images/profile.png";
 import logo from "@/public/images/logo.svg";
@@ -20,6 +20,7 @@ import PortfolioCard from "@/components/PortfolioCard";
 import Link from "next/link";
 import NameTitle from "@/components/NameTitle";
 import {projects} from "../public/data/projects"
+// import resume from "../public/data/resume.pdf"
 
 export default function Home() {
   console.log(projects)
@@ -114,7 +115,12 @@ export default function Home() {
             
             
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 shadow-2xl shadow-blue-500 dark:shadow-blue-300">
+          <div className="flex p-4 justify-center items-center gap-2">
+          <a href="/data/Mustafa ÖRS FrontendResume.pdf" download target="_blank" rel="noreferrer" locale={false}>
+          <span className="flex justify-center items-center gap-2 border-2 rounded-xl p-2 cursor-pointer bg-gradient-to-b from-teal-500 dark:text-white " ><FaDownload/>Download Resume</span></a>
+
+          </div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500  rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 shadow-2xl shadow-blue-500 dark:shadow-blue-300">
             <Image
               src={profile}
               alt="profile"
