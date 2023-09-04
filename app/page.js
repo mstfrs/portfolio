@@ -33,7 +33,7 @@ export default function Home() {
         <section className=" min-h-screen">
           
 
-          <header className="flex flex-row justify-between pt-6 w-full px-10 items-center sticky top-0 bg-white dark:bg-gray-900 z-40">
+          <header className="flex flex-row justify-between  w-full px-10 py-6 items-center sticky top-0 bg-white dark:bg-gray-900 z-40">
             <div className="basis-1/4">
               <Image alt="logo" width={50} height={50} src={logo} />
             </div>
@@ -132,7 +132,7 @@ export default function Home() {
 
           {/* -----------------------Skills-------------------- */}
           <a  name="skills"></a>
-          <section  >
+          <section className="px-10"  >
             
             
             <div >
@@ -255,7 +255,7 @@ export default function Home() {
           </section>
           {/* -----------------------Qualifications-------------------- */}
           <a  name="qualification"></a>
-          <section>
+          <section className="px-10">
             <div>
               <h3 className="text-3xl py-1 my-12 pt-4 dark:text-white text-center flex flex-col items-center">
                 Qualifications
@@ -353,7 +353,7 @@ export default function Home() {
            {/* -----------------------Portfolio-------------------- */}
            <a  name="portfolio"></a>
 
-          <section>
+          <section className="px-10">
             <div>
               <h3 className="text-3xl py-1 my-12 pt-4 dark:text-white text-center flex flex-col items-center">Portfolio
               <motion.div
