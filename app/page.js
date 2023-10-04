@@ -24,7 +24,7 @@ import {projects} from "../public/data/projects"
 
 export default function Home() {
   console.log(projects)
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisitOpen, setIsVisitOpen] = useState(true)
   return (
@@ -241,6 +241,23 @@ export default function Home() {
 
                   <Progress
                     percent={95}
+                    showInfo={false}
+                    size="small"
+                    className="text-white"
+                    status="active"
+                    type="line"
+                    strokeColor={"#0C93DB"}
+                    trailColor={"#95D0F0"}
+                  />
+                </div>
+                <div className="dark:text-white flex flex-col ">
+                  <div className="flex justify-between items-center">
+                    <h3 className="basis-1/5">Next JS</h3>
+                    <h6 className="text-xs">Advanced</h6>
+                  </div>
+
+                  <Progress
+                    percent={90}
                     showInfo={false}
                     size="small"
                     className="text-white"
