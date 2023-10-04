@@ -132,7 +132,7 @@ export default function Home() {
 
           {/* -----------------------Skills-------------------- */}
           <a  name="skills"></a>
-          <section className="px-10"  >
+           <section className="px-10"  >
             
             
             <div >
@@ -282,32 +282,16 @@ export default function Home() {
                               Frontend Developer
                             </h6>{" "}
                             <p className="text-sm text-gray-500 dark:text-gray-300">
-                              Freelance
-                            </p>{" "}
-                            <p className="text-sm flex items-center gap-2 mt-4  text-gray-400 dark:text-gray-300">
-                              <LuCalendarDays className="text-sm" />
-                              Sep 2018 - Feb 2021
-                            </p>{" "}
-                          </>
-                        ),
-                      },
-                      {
-                        children: (
-                          <>
-                            {" "}
-                            <h6 className="text-gray-900 dark:text-white text-lg">
-                              Frontend Developer
-                            </h6>{" "}
-                            <p className="text-sm text-gray-500 dark:text-gray-300">
-                              Clarusway
+                              JuniusTech
                             </p>{" "}
                             <p className="text-sm flex justify-end items-center gap-2 mt-4  text-gray-400 dark:text-gray-300">
                               <LuCalendarDays className="text-sm" />
-                              Jun 2021 - Jul 2022
+                              Aug 2023 - Present
                             </p>{" "}
                           </>
                         ),
                       },
+
                       {
                         children: (
                           <>
@@ -325,6 +309,7 @@ export default function Home() {
                           </>
                         ),
                       },
+
                       {
                         children: (
                           <>
@@ -333,15 +318,37 @@ export default function Home() {
                               Frontend Developer
                             </h6>{" "}
                             <p className="text-sm text-gray-500 dark:text-gray-300">
-                              JuniusTech
+                              Clarusway
                             </p>{" "}
                             <p className="text-sm flex justify-end items-center gap-2 mt-4  text-gray-400 dark:text-gray-300">
                               <LuCalendarDays className="text-sm" />
-                              Aug 2023 - Present
+                              Jun 2021 - Jul 2022
                             </p>{" "}
                           </>
                         ),
                       },
+
+
+                      {
+                        children: (
+                          <>
+                            {" "}
+                            <h6 className="text-gray-900 dark:text-white text-lg">
+                              Frontend Developer
+                            </h6>{" "}
+                            <p className="text-sm text-gray-500 dark:text-gray-300">
+                              Freelance
+                            </p>{" "}
+                            <p className="text-sm flex items-center gap-2 mt-4  text-gray-400 dark:text-gray-300">
+                              <LuCalendarDays className="text-sm" />
+                              Sep 2018 - Feb 2021
+                            </p>{" "}
+                          </>
+                        ),
+                      },
+                    
+                    
+                     
                     ]}
                   />
                 </div>

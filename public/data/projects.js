@@ -1,5 +1,12 @@
 export const projects=[
   {
+  title: 'Admin Dashboard',
+  image: "/images/dashboard.JPG",
+  github: "https://github.com/mstfrs/dashboard.git",
+  demo: "https://mors-dashboard.vercel.app/",
+  techs:["HTML","NextJS", "Tailwind CSS, ChartJS"],
+},
+  {
   title: 'POS App',
   image: "/images/posapp.JPG",
   github: "https://github.com/mstfrs/pos-app.git",
