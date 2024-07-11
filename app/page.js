@@ -317,6 +317,24 @@ export default function Home() {
                               Frontend Developer
                             </h6>{" "}
                             <p className="text-sm text-gray-500 dark:text-gray-300">
+                              Assa Teknoloji
+                            </p>{" "}
+                            <p className="text-sm flex items-center gap-2 mt-4  text-gray-400 dark:text-gray-300">
+                              <LuCalendarDays className="text-sm" />
+                              Dec 2023 - May 2024
+                            </p>{" "}
+                          </>
+                        ),
+                      },
+
+                      {
+                        children: (
+                          <>
+                            {" "}
+                            <h6 className="text-gray-900 dark:text-white text-lg">
+                              Frontend Developer
+                            </h6>{" "}
+                            <p className="text-sm text-gray-500 dark:text-gray-300">
                               Paramount Students
                             </p>{" "}
                             <p className="text-sm flex items-center gap-2 mt-4  text-gray-400 dark:text-gray-300">
